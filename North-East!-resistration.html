@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>north-east/resistraion</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+input[type=text], select {
+    width: 30%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color:green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  background-color: #cae8ca;
+  border: 1px solid #4CAF50;
+}
+.my  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.my li {
+    float: left;
+   display:inline;
+}
+
+.my li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.my li a:hover {
+    background-color: #111111;
+    color:blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+.left {
+  
+  float: left;
+  width: 20%;
+}
+.data {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.data:hover{
+  color:blue;
+}
+
+.center { 
+ overflow: scroll;
+ border:1px solid blue;
+  float: left;
+  width: 80%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .center {
+    background-color:blue;
+    width: 80%;
+    padding: 0;
+  }
+ 
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .left, .center {
+    width: 100%;
+  }
+}
+</style>
+
+<body style="background-color:lightblue">
+<h1 style="text-align:center;font-size:50px">THE NORTH-EAST</h1>
+
+<div class="sticky">
+ <ul class="my">
+  <li><a href="file:///D:/north-east/North-East!.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="file:///D:/north-east/contact.html">Contact</a></li>
+  <li><a href="file:///D:/north-east/about.html">About</a></li>
+ </ul>
+
+</div>
+
+<div style="border:2px solid blue">
+  <div class="left">
+    <h3> Main Cities</h3>
+    <div class="data">Guwahati</div>
+    <div class="data" title='Shillong is a hill station in the northeastern part of India and the capital of Meghalaya, which means "The Abode of Clouds" and is one of the smallest states in India. It is the headquarters of the East Khasi Hills district and is situated at an average altitude of 4,908 feet above sea level, with the highest point being Shillong Peak at 6,449 feet. Shillong is the 330th most populous city in India with a population of 143,229 according to the 2011 census. It is said that the rolling hills around the town reminded the European settlers of Scotland. Hence, they would also refer to it as the "Scotland of the East".'>Shilong</div>
+    <div class="data" title="Cherrapunji is a subdivisional town in the East Khasi Hills district in the Indian state of Meghalaya. It is the traditional capital of aNongkhlaw hima, both known as Sohra or Churra.">Cherapunji</div>
+    <div class="data" title="Dawki is on of the best place to visit.It is full with nature.">Dawki</div>
+    <div class="data">Sikkim</div>
+    <div class="data">Dishpur</div>
+     <div class="data" title="Tawang district is the smallest of the 16 administrative districts of Arunachal Pradesh in northeastern India. With a population of 49,977, it is the eighth least populous district in the country.">Tawang</div>
+    <div class="data" title="Gangtok is a municipality, the capital and the largest town of the Indian state of Sikkim. It also is the headquarters of the East Sikkim district. Gangtok is located in the eastern Himalayan range, at an elevation of 1,650 m (5,410 ft). The town's population of 100,000 belongs to different ethnicities such as Nepalis, Lepchas and Bhutia. Nestled within higher peaks of the Himalaya and enjoying a year-round mild temperate climate, Gangtok is at the centre of Sikkim's tourism industry.">Gangtok</div>
+    <div class="data">Mizoram</div> 
+</div>
+
+  
+   <div class="center" style="background-image:url('Gangtok_ropeway.jpg');">
+     
+<form action="file:///D:/north-east/registration/"  method="get" target="_blank" >
+ First Name:<br>
+ <input type="text" name="fname" placeholder="First name" required><br>
+ Last Name:<br>
+  <input type="text" name="lname" placeholder="Last name" required><br><br>
+  GENDER;
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other<br><br>
+  Birth Date:
+
+
+<input type="date" name="brthday" min="2000-01-02" required>
+
+
+
+  <br><br>
+ Email:<br>
+<input type="email" name="mail" value="abc@gmail.com" required>
+Contact Number:
+<input type="tel" name="contact" placeholder="0123456789" required><br><br>
+upload adhar:<input type="file" name="adhar" maxsize="200kb"  required>max size should be less than 200kb<br>
+PASSWORD:
+<input type="password" name="password" required>
+<br>
+   <br>
+    <br>
+  <input type="submit" value="Submit" >
+ 
+
+</form>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
